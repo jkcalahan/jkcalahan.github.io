@@ -43,3 +43,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         window.scrollTo({ top, behavior: 'smooth' });
     });
 });
+
+// ── Paper card tap-to-toggle (mobile) ──────────────────────────
+// On mobile there's no hover, so tap the card to show/hide the overlay.
+// Tapping the ADS link itself still opens the link normally.
+document.querySelectorAll('.paper-card').forEach(card => {
+    card.addEventListener('click', (e) => {
+        if (e.target.tagName === 'A') return;   // let link clicks through
+        card.classList.toggle('overlay-active');
+    });
+});
