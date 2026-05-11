@@ -50,19 +50,15 @@
         </div>
 
         <div class="about-text">
-            <!-- ↓ Your name -->
             <h1>Jenny K. Calahan</h1>
 
-            <!-- ↓ Your title and institution -->
             <p class="job-title">Kavli-Laukien Origins of Life Fellow &nbsp;·&nbsp; Center for Astrophysics, Harvard</p>
 
-            <!-- ↓ Your bio -->
             <p class="bio">
                 I am an astronomer curious about the origins of our Earth, exoplanets, and life. I primarily study protoplanetary disks, and use thermo-chemical modeling
                 to connect disk observations to the physical and chemical processes that shape planet formation.
             </p>
 
-            <!-- ↓ Update every href -->
             <div class="pill-links">
                 <a href="mailto:jenny.calahan@cfa.harvard.edu">✉&nbsp;Email</a>
                 <a href="https://ui.adsabs.harvard.edu/search/q=author%3ACalahan%2CJ"
@@ -85,117 +81,163 @@
     <div class="container">
         <h2 class="section-heading">Research</h2>
         <p class="section-sub">
-            Selected publications — click a title to open its ADS record.
+            Selected publications — hover over a card to see details and a link to the ADS record.
         </p>
 
         <!-- Paper 1 ─────────────────────────────────────── -->
         <article class="paper-card">
-            <div class="paper-fig">
-                <img src="images/papers/paper1.jpg" alt="Key figure from paper 1">
+
+            <!-- Always visible -->
+            <div class="paper-front">
+                <div class="paper-fig">
+                    <img src="images/papers/paper1.jpg" alt="Key figure from paper 1">
+                </div>
+                <div class="paper-front-text">
+                    <!-- ↓ Short, approachable title — change to whatever you like -->
+                    <h3 class="paper-display-title">Taking the Temperature of a Nearby Planet-Forming Disk</h3>
+                    <p class="paper-meta">
+                        <strong>Calahan, J. K.</strong>, Bergin E. A., Zhang K., et al.
+                        &nbsp;·&nbsp;
+                        <em>ApJ</em> 908, 8 (2021)
+                    </p>
+                </div>
             </div>
-            <div class="paper-body">
-                <h3><a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...908....8C/abstract"
-                        target="_blank" rel="noopener">
-                    The TW Hya Rosetta Stone Project. III. Resolving the Gaseous Thermal Profile of the Disk
-                </a></h3>
 
-                <p class="paper-meta">
-                    <strong>Calahan, J. K.</strong>, Bergin E. A., Zhang K., et al.
-                    &nbsp;·&nbsp;
-                    <em>ApJ</em> 908, 8 (2021)
-                </p>
-
+            <!-- Appears on hover -->
+            <div class="paper-overlay">
+                <h3>
+                    <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...908....8C/abstract"
+                       target="_blank" rel="noopener">
+                        The TW Hya Rosetta Stone Project. III. Resolving the Gaseous Thermal Profile of the Disk
+                    </a>
+                </h3>
                 <p class="paper-summary">
                     TW Hya is the nearest protoplanetary disk to us, and has been observed
-                    throughoughly with ALMA. In this paper, I combine multiple ALMA datasets to reconstruct the 
-                    disk's temperature structure, which is a key input for planet formation models. 
-                    My model utlizes CO-depletion in order to reproduce both the CO line emission and HD flux. Since then, this model has been used widely and is publically available.
+                    thoroughly with ALMA. In this paper, I combine multiple ALMA datasets to reconstruct the
+                    disk's temperature structure, which is a key input for planet formation models.
+                    My model utilizes CO-depletion in order to reproduce both the CO line emission and HD flux. Since then, this model has been used widely and is publicly available.
                 </p>
             </div>
+
+            <span class="hover-hint">hover for details →</span>
         </article>
-        
+
 
         <!-- Paper 2 ─────────────────────────────────────── -->
         <article class="paper-card">
-            <div class="paper-fig">
-                <img src="images/papers/paper2.jpg" alt="Key figure from paper 2">
+
+            <div class="paper-front">
+                <div class="paper-fig">
+                    <img src="images/papers/paper2.jpg" alt="Key figure from paper 2">
+                </div>
+                <div class="paper-front-text">
+                    <!-- ↓ Short, approachable title — change to whatever you like -->
+                    <h3 class="paper-display-title">Chemical Fingerprints of Late-Stage Planet Formation</h3>
+                    <p class="paper-meta">
+                        <strong>Calahan, J.K.</strong>, Bergin E. A., Bosman A., et al.
+                        &nbsp;·&nbsp;
+                        <em>Nature Astronomy</em> 7, 49 (2023)
+                    </p>
+                </div>
             </div>
-            <div class="paper-body">
-                <h3><a href="https://ui.adsabs.harvard.edu/abs/2023NatAs...7...49C/abstract"
-                        target="_blank" rel="noopener">
-                    UV-driven chemistry as a signpost of late-stage planet formation
-                </a></h3>
 
-                <p class="paper-meta">
-                    <strong>Calahan, J.K.</strong>, Bergin E. A., Bosman A., 
-                    et al.
-                    &nbsp;·&nbsp;
-                    <em>Nature Astronomy</em> 7, 49 (2023)
-                </p>
-
+            <div class="paper-overlay">
+                <h3>
+                    <a href="https://ui.adsabs.harvard.edu/abs/2023NatAs...7...49C/abstract"
+                       target="_blank" rel="noopener">
+                        UV-driven chemistry as a signpost of late-stage planet formation
+                    </a>
+                </h3>
                 <p class="paper-summary">
-                    Older disks exihbit bright emission from complex organic molecules (COMs), such as CH3N.
-                    In this paper, I show that a combined enhancement of carbon and an evovled dust substructure are 
-                    required to reproduce observd COMs emission, with TW Hya and HD 163296 as case studies. 
+                    Older disks exhibit bright emission from complex organic molecules (COMs), such as CH<sub>3</sub>CN.
+                    In this paper, I show that a combined enhancement of carbon and an evolved dust substructure are
+                    required to reproduce observed COMs emission, with TW Hya and HD 163296 as case studies.
                     This work suggests that carbon-rich molecules may be signposts of late-stage planet formation.
                 </p>
             </div>
+
+            <span class="hover-hint">hover for details →</span>
         </article>
+
 
         <!-- Paper 3 ─────────────────────────────────────── -->
         <article class="paper-card">
-            <div class="paper-fig">
-                <img src="images/papers/paper3.png" alt="Key figure from paper 3">
+
+            <div class="paper-front">
+                <div class="paper-fig">
+                    <img src="images/papers/paper3.png" alt="Key figure from paper 3">
+                </div>
+                <div class="paper-front-text">
+                    <!-- ↓ Short, approachable title — change to whatever you like -->
+                    <h3 class="paper-display-title">How Water Shields Itself from UV Starlight</h3>
+                    <p class="paper-meta">
+                        <strong>Calahan, J.K.</strong>, Bergin E. A., Bosman A., et al.
+                        &nbsp;·&nbsp;
+                        <em>ApJL</em> 934, L14 (2022)
+                    </p>
+                </div>
             </div>
-            <div class="paper-body">
-                <h3><a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...934L..14C/abstract"
-                        target="_blank" rel="noopener">
-                    Water UV-sheilding...Implications for O-18 Isotope Anomalies in H2-18O Infrared Emission and Meteorites
-                </a></h3>
 
-                <p class="paper-meta">
-                    <strong>Calahan, J.K.</strong>, Bergin E. A., Bosman A., 
-                    et al.
-                    &nbsp;·&nbsp;
-                    <em>Astrophysical Journal Letters</em> 934, 1 (2024)
-                </p>
-
+            <div class="paper-overlay">
+                <h3>
+                    <a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...934L..14C/abstract"
+                       target="_blank" rel="noopener">
+                        Water UV-Shielding in the Disk Midplane: Implications for O<sup>18</sup> Isotope Anomalies
+                        in H<sub>2</sub><sup>18</sup>O Infrared Emission and Meteorites
+                    </a>
+                </h3>
                 <p class="paper-summary">
-                    Gas-phase water is highly abundant in typical protoplanetary disks, and can shield other molecules from UV radiation. 
-                    In this paper, I show that water UV-shielding in as AS 209 model will lead to an enhancement of H2-18O, and could be observed with JWST.
-                    I identify individual lines that should be used in future searches for H2-18O within JWST data. 
+                    Gas-phase water is highly abundant in typical protoplanetary disks, and can shield other molecules from UV radiation.
+                    In this paper, I show that water UV-shielding in an AS 209 model will lead to an enhancement of H<sub>2</sub><sup>18</sup>O,
+                    and could be observed with JWST.
+                    I identify individual lines that should be used in future searches for H<sub>2</sub><sup>18</sup>O within JWST data.
                 </p>
             </div>
+
+            <span class="hover-hint">hover for details →</span>
         </article>
 
-         <!-- Paper 4 ─────────────────────────────────────── -->
+
+        <!-- Paper 4 ─────────────────────────────────────── -->
         <article class="paper-card">
-            <div class="paper-fig">
-                <img src="images/papers/paper4.png" alt="Key figure from paper 4">
+
+            <div class="paper-front">
+                <div class="paper-fig">
+                    <img src="images/papers/paper4.png" alt="Key figure from paper 4">
+                </div>
+                <div class="paper-front-text">
+                    <!-- ↓ Short, approachable title — change to whatever you like -->
+                    <h3 class="paper-display-title">How Neighboring Stars Shape Planet-Forming Chemistry</h3>
+                    <p class="paper-meta">
+                        <strong>Calahan, J.K.</strong>, &Ouml;berg K., Booth A.S.
+                        &nbsp;·&nbsp;
+                        <em>ApJ</em> 991, 94 (2025)
+                    </p>
+                </div>
             </div>
-            <div class="paper-body">
-                <h3><a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...991...94C/abstract"
-                        target="_blank" rel="noopener">
-                    The Impact of External Radiation on the Inner Disk Chemistry of Planet Formation
-                </a></h3>
 
-                <p class="paper-meta">
-                    <strong>Calahan, J.K.</strong>, Öberg K., Booth A.S., 
-                   
-                    &nbsp;·&nbsp;
-                    <em>Astrophysical Journal</em> 991, 1 (2025)
-                </p>
-
+            <div class="paper-overlay">
+                <h3>
+                    <a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...991...94C/abstract"
+                       target="_blank" rel="noopener">
+                        The Impact of External Radiation on the Inner Disk Chemistry of Planet Formation
+                    </a>
+                </h3>
                 <p class="paper-summary">
-                    Most disks, including our own Solar Nebula, are born in clustered environments and are 
-                    exposed to external radiation from nearby stars. Using a thermo-chemical model, I explored the 
-                    impact of extrnal UV radiation on inner disk chemistry. I find that the midplane within 1AU 
-                    will not be impacted by even a 10<sup>6</sup> G<sub>0<sub>, but the atmosphere and outer disk will be significantly process. 
-                    Snow-surfaces, even the water snow-surface, will turn over and more of the outer disk will host temperatures
-                    allowing water and other typically inner disk molecules to exist in the gas phase.
+                    Most disks, including our own Solar Nebula, are born in clustered environments and are
+                    exposed to external radiation from nearby stars. Using a thermo-chemical model, I explored the
+                    impact of external UV radiation on inner disk chemistry. I find that the midplane within 1 AU
+                    will not be impacted by even a 10<sup>6</sup> G<sub>0</sub>, but the atmosphere and outer disk
+                    will be significantly processed. Snow-surfaces, even the water snow-surface, will turn over and
+                    more of the outer disk will host temperatures allowing water and other typically inner disk
+                    molecules to exist in the gas phase.
                 </p>
             </div>
+
+            <span class="hover-hint">hover for details →</span>
         </article>
+
+        <!-- ↑ Copy a paper-card block here to add more papers ↑ -->
 
     </div>
 </section>
@@ -206,12 +248,12 @@
      ===================================================== -->
 <section id="dei">
     <div class="container">
-        <h2 class="section-heading">Making Astronomy Accessible Through &amp; Outreach and Service</h2>
+        <h2 class="section-heading">Making Astronomy Accessible Through Outreach and Service</h2>
 
         <p class="section-sub">
-            Making astronomy more accessible for underrepresented groups helps everyone. 
+            Making astronomy more accessible for underrepresented groups helps everyone.
             Thus, I have used my skills as a leader, advocate, educator, and public speaker to
-            promote inclusion in the field, and espeically encourage and promote individuals in 
+            promote inclusion in the field, and especially encourage and promote individuals in
             underrepresented groups. Below are a few examples of such service and outreach.
         </p>
 
@@ -220,9 +262,9 @@
             <div class="dei-card">
                 <h3>Postdoc Council Chair</h3>
                 <p>
-                    I have been a member and now chair of the Postdoc Council at the 
+                    I have been a member and now chair of the Postdoc Council at the
                     Center for Astrophysics | Harvard &amp; Smithsonian from Summer 2024 to present.
-                    As chair, I initiated and led the first CfA postdoc symposium, built postdoc community 
+                    As chair, I initiated and led the first CfA postdoc symposium, built postdoc community
                     through a Summer Games event, and advocated for postdoc support as a member of
                     the CfA executive council.
                 </p>
@@ -231,10 +273,10 @@
             <div class="dei-card">
                 <h3>Member of AAS Committee for Sexual and Gender Minorities</h3>
                 <p>
-                    I have been an active member of the AAS SGMA committee from 2023-2026. As a member, I created 
-                    and maintained the Queer Speaker list and I created the SGMA mini-grants which go to support local
-                    events that build LGBTQ+ community. I led the effort to summarize our committee's work, as 
-                    well as action items for the astronomy community to support LGBTQ+ individuals in our field in a 
+                    I have been an active member of the AAS SGMA committee from 2023–2026. As a member, I created
+                    and maintained the Queer Speaker list and created the SGMA mini-grants which go to support local
+                    events that build LGBTQ+ community. I led the effort to summarize our committee's work, as
+                    well as action items for the astronomy community to support LGBTQ+ individuals in our field in a
                     Nature Article to be published in June 2026.
                 </p>
             </div>
@@ -242,10 +284,10 @@
             <div class="dei-card">
                 <h3>Public Outreach</h3>
                 <p>
-                  I have given talks for the Boston/Cambridge public on topics of the Origins of Life and planets, 
-                  as well as led telescope viewing sessions on the roof of the CfA. I have spoken to middle school 
-                  students both at their schools directly, and through STEM-fair events where I have curated 
-                  workshops on astronomical topics. 
+                    I have given talks for the Boston/Cambridge public on topics of the Origins of Life and planets,
+                    as well as led telescope viewing sessions on the roof of the CfA. I have spoken to middle school
+                    students both at their schools directly, and through STEM-fair events where I have curated
+                    workshops on astronomical topics.
                 </p>
             </div>
 
@@ -268,7 +310,6 @@
             ⬇&nbsp; Download CV (PDF)
         </a>
 
-        <!-- ↓ Update this date whenever you upload a new CV -->
         <p class="cv-date">Last updated: January 2025</p>
     </div>
 </section>
@@ -279,7 +320,7 @@
      ===================================================== -->
 <footer>
     <p>
-        © 2025 J.K. Calahan &nbsp;·&nbsp;
+        © 2025 Jenny K. Calahan &nbsp;·&nbsp;
         Hosted on <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>
     </p>
 </footer>
