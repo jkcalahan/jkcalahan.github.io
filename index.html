@@ -1,254 +1,274 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-	<head>
-		<title>Jenny Calahan</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Introduction</a></li>
-							<li><a href="#one">Research</a></li>
-							<li><a href="#two">Outreach & DEI Activities</a></li>
-							<li><a href="#three">CV</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Jenny Calahan</h1>
-							<p>I am an Origins of Life Fellow at the Center for Astrophysics. 
-							   I primarily use thermo-chemical models to better understand the chemical and physical environment within protoplanetary disks. 
-							   My models are all constrained by observations, mainly ALMA and JWST. I am generally interested in 'typical' planet formation, including tracing the water reservoir,
-						           seeing how clustered environments impact the chemistry of planet formation, and observations of FUOr which expose the volatile chemical reservoir.
-
-							<p>You can contact me at jcalahan[at]cfa.harvard.edu<p>
-							<head>
-							    <meta charset="UTF-8">
-							    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-							    <title>Five Square Images</title>
-							    <style>
-							        .image-row {
-							            display: flex;
-							            justify-content: space-between; /* Adjust spacing between images */
-							            gap: 1px; /* Optional gap between images */
-							        }
-							
-							        .image-row img {
-							            width: 150px; /* Set width of the square */
-							            height: 150px; /* Set height of the square */
-							            object-fit: cover; /* Ensures the image scales correctly */
-							        }
-							    </style>
-							</head>
-							<body>
-							    <!-- <h1>Three Images in a Row</h1> -->
-							    <div class="image-row">
-							        <img src="images/Jenny1.jpg" alt="Image 1">
-								<img src="images/jenny2.jpg" alt="Image 2">
-							        <img src="images/jenny2.jpg" alt="Image 2">
-								<img src="images/jenny2.jpg" alt="Image 2">
-							        <img src="images/jenny3.jpg" alt="Image 3">
-							    </div>
-							</body>
-								
-							<!-- <a href="http://html5up.net">HTML5 UP</a><br />
-							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
-							-->
-						</div>
-					</section>
-
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/Gas_Temperature.png" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Thermo-chemical Models for Specific Disks</h2>
-									<p>I created very well constrained models for the disks TW Hya and HD 163296 using a 2D-thermochemical model, 
-										and reproducing multiple resolved ALMA observations. These produce well constrained 2D temperature profiles of each disk, 
-										allow for estimates of disk mass, and are used to futher understand the chemical environment in these disks.  </p>
-									<p> Both papers below have 2D disk models that are publically available </p>
-									<ul class="actions">
-										<li><a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...908....8C/abstract" class="button">Resolving the Gaseous Thermal Profile of the TW Hya Disk</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="https://ui.adsabs.harvard.edu/abs/2021ApJS..257...17C/abstract" class="button">Determining the 2D Thermal Structure of the HD 163296 Disk</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/UVchemistry.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Evolved Disks Contain UV-Enriched, Carbon-Rich Chemistry</h2>
-									<p> Using my thermo-chemical models of TW Hya and HD 163296, I am also able to reproduce observations of the carbon-rich species CH3CN
-									, HCN, and HC3N. I argue the only way to reproduce this and all other previous observations are by evoking a UV-enriched radiation field 
-									due to the evoultion of small dust.</p>
-									<ul class="actions">
-										<li><a href="https://ui.adsabs.harvard.edu/abs/2023NatAs...7...49C/abstract" class="button">UV-driven chemistry as a signpost of late-stage planet formation</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/water_emission.png" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Probing the Water Resevior in the Terrestrial Planet-Forming Region</h2>
-									<p> Water is unique amongst molecule for many reasons, including the way it impacts the transfer of UV photons. 
-									Once water is optically thick it will block UV photons across a wide range of wavelengths. We implemented this water self-shielding
-									in the thermo-chemical code DALI, and I found that it enhanced the H2-18O abundance relative to H2-16O. I was then able to identify the best
-									transitions for discovering H2-18O in JWST spectra. </p>
-									<ul class="actions">
-										<li><a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...934L..14C/abstract" class="button">Oxygen-18 Isotope Anomalies in H2-18O Infrared Emission and Meteorites</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/FUOri.png" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>NOEMA Chemical Survey of FU Ori Objects</h2>
-									<p>FUOr objects are young stellar objects that undergo extreme outbursts due to a rapid increase in accretion from the disk onto the star. 
-									This offers a 'hack' to probe the chemistry of planet formation in the gas-phase, as many volitles will sublimate from the ice-phase into the gas.
-									I observed 5 outbursting sources with NOEMA and find that each of the disks/inner envelope contain high masses, and I detected COMs, water, and multiple
-									sulfur-bearing species in the source V1057 Cyg.</p>
-									<ul class="actions">
-										<li><a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...967..158C/abstract" class="button">High Mass Inner Regions Found in Five Outbursting Sourcess</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...975..170C/abstract" class="button">A Chemical Inventory of V1057 Cyg</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
-
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>Outreach & DEI Activities</h2>
-							<p> I am enthusiastic about sharing my passion for astronomy, and take time to inspire future generations to persue a career in STEM. 
-							I also know the only way to keep people in this field is to make astronomy accessible to all, regardless of background, resources, and opportunity. 
-							Thus, I spend a significant amount of my time in fostering community, with a focus on promoting Diversity, Equity, Inclusion, and Accessibility.</p>
-							
-						       </p>Below I list Outreach and DEI activites I am currently active in as a Postdoc. Activites from graduate school can be found in my CV</p>
-	
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-user-astronaut"></span>
-									<h3>Deputy of CfA's EDIB Committee</h3>
-									<p>The Center for Astrophysics has a committee on Equity, Diversity, Inclusion, and Belonging with representatives from all departments and career stages. 
-									Since I started on the committee in Fall of 2023, I have be one of two deupties, aiding in committee organiziation and dissemination of information.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-rainbow"></span>
-									<h3>LGBTQ+ Identity Group Leader</h3>
-									<p>I initiated the formation of Identity Groups at the CfA, and lead the LGBTQ+ group. People who identify as LGBTQ+ are all welcome
-									to join us for a time of networking and building community. I have procurred funding so that 10+ attendees will recive free food and coffee. </p>
-								</section>
-								<section>
-									<span class="icon solid major fa-address-book"></span>
-									<h3>SGMA Member</h3>
-									<p>I am a member of the <a href="https://aas.org/comms/sgma">AAS committee on Sexual and Gender-Minorities in Astronomy (SGMA)</a> since Fall of 2023. As a member, I am creating a resource
-									of LGBTQ+ identifying individuals who are willing to give science talks at other institutions. </p>
-								</section>
-								<section>
-									<span class="icon solid major fa-satellite-dish"></span>
-									<h3>AMP-UP Leader</h3>
-									<p><a href="https://amp-up.space/">The Astronomy Mentorship Program for Upcoming Postdocs (AMP-UP)</a> has been acitve for three years, and I joined the leadership committee in Fall 2024
-									after serving as a mentor in the 2023-2024 job season. As a leader of the program, I aided in mentor-mentee pairing, and ran workshops on aspects of the postdoc application process. </p>
-								</section>
-								<section>
-									<span class="icon solid major fa-meteor"></span>
-									<h3>Postdoc Council Member</h3>
-									<p>I am a member of the CfA's Postdoc Committee, which consists of postdocs from each division. As a member, I have organizinged networking opportunities for the 100+ postdocs at the CfA
-									and represent postdoc needs when communicating with department leaders. </p>
-								</section>
-								<section>
-									<span class="icon solid major fa-plus"></span>
-									<h3>Miscellaneous</h3>
-									<p>I have a reputation for being very knowledgable on how to make processes more equitable and accessible. I have been called to help write a best hiring practices document for the CfA, 
-									I helped organize a JWST peer-review process, and write a code of conduct for journal clubs and collaborations. </p>
-								</section>
-							</div>
-						<!-- 	<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>  -->
-						</div>
-					</section>
-
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Curriculum vitae</h2>
-							<p>This CV has last been updated in December of 2024.</p>
-
-							<head>
-							    <meta charset="UTF-8">
-							    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-							    <title>PDF Viewer</title>
-							    <style>
-							        iframe {
-							            width: 100%;
-							            height: 600px;
-							            border: none;
-							        }
-							    </style>
-							</head>
-							<body>
-	
-							    <iframe src="images/Calahan_CV_website.pdf"></iframe>
-							</body>
-
-							<!--<a href="#" class="image"><img src="images/Calahan_CV_website.pdf" alt="" data-position="center center" /></a>-->
-
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e3}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e3; -webkit-text-stroke: #0000e3; min-height: 14.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px Arial}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Songti SC'; color: #0000e9; -webkit-text-stroke: #0000e3}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Arial; color: #000000; -webkit-text-stroke: rgba(255, 255, 255, 0.55)}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #000000; -webkit-text-stroke: #4b4b4b}
+    span.s1 {text-decoration: underline ; font-kerning: none}
+    span.s2 {font-kerning: none}
+    span.s3 {font: 12.0px Symbol; text-decoration: underline ; font-kerning: none}
+    span.s4 {font: 12.0px Times; text-decoration: underline ; font-kerning: none; color: #0000e9; -webkit-text-stroke: 0px #0000e3}
+    span.s5 {font: 12.0px Menlo; text-decoration: underline ; font-kerning: none}
+    span.s6 {font: 12.0px Times; text-decoration: underline ; font-kerning: none}
+    span.s7 {font: 12.0px 'Songti SC'; text-decoration: underline ; font-kerning: none}
+    span.s8 {font: 11.0px Arial; text-decoration: underline ; font-kerning: none; color: #000000}
+    span.s9 {font: 11.0px Arial; text-decoration: underline ; font-kerning: none; color: #000000; background-color: rgba(0, 0, 0, 0)}
+    span.s10 {font-kerning: none; background-color: rgba(0, 0, 0, 0)}
+    span.s11 {font-kerning: none; background-color: #ffffff}
+    span.s12 {font: 12.0px 'Hiragino Mincho ProN'; text-decoration: underline ; font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;!DOCTYPE html&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;html lang="en"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;head&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">    </span>&lt;title&gt;J.K. Calahan&lt;/title&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">          </span>rel="stylesheet"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="styles.css"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;/head&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;body&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;!-- =====================================================</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">     </span>NAVIGATION</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">     </span>===================================================== --&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;nav id="navbar"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">    </span>&lt;div class="nav-inner"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;a href="#about" class="nav-brand"&gt;J.K. Calahan&lt;/a&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;!-- Hamburger button (visible on mobile only) --&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;span&gt;&lt;/span&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;span&gt;&lt;/span&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;span&gt;&lt;/span&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;/button&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;ul class="nav-menu" id="navMenu"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#research"&gt;Research&lt;/a&gt;&lt;/li&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#dei"&gt;DEI &amp;amp; Outreach&lt;/a&gt;&lt;/li&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#cv"&gt;CV&lt;/a&gt;&lt;/li&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">    </span>&lt;/div&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;/nav&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;!-- =====================================================</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">     </span>ABOUT</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">     </span>===================================================== --&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;section id="about"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">    </span>&lt;div class="container about-layout"&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;!-- Profile photo — replace images/profile.jpg with your own --&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;div class="profile-wrap"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;img src="images/profile.png”</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                 </span>alt="Portrait of Jenny K. Calahan"</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                 </span>id="profileImg"</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                 </span>class="profile-photo"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;!-- Shown automatically if the image is missing --&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;div class="profile-fallback" id="profileFallback"&gt;JKC&lt;/div&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;/div&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;!-- Bio --&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;div class="about-text"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;!-- <span class="s3">↓</span> Your name --&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;h1&gt;Jenny K. Calahan&lt;/h1&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;!-- <span class="s3">↓</span> Your title and institution --&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;p class="job-title"&gt;Kavli-Laukien Origins of Life Fellow &amp;nbsp;·&amp;nbsp; Center for Astrophysics, Harvard&lt;/p&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;!-- <span class="s3">↓</span> 3–5 sentence bio --&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;p class="bio"&gt;</a></span></p>
+<p class="p3"><span class="s4"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span></a></span>I am an Origins of Life Fellow at the Center for Astrophysics. I primarily use thermo-chemical models to better understand the chemical and physical environment within protoplanetary disks. My models are all constrained by observations, mainly ALMA and JWST. I am generally interested in 'typical' planet formation, including tracing the water reservoir, seeing how clustered environments impact the chemistry of planet formation, and observations of FUOr which expose the volatile chemical reservoir.</p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;/p&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;!-- <span class="s3">↓</span> Update every href --&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;div class="pill-links"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;a href="mailto:you@institution.edu"&gt;<span class="s5">✉</span>&amp;nbsp;Email&lt;/a&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;a href="https://ui.adsabs.harvard.edu/search/q=author%3ACalahan%2CJ"</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                   </span>target="_blank" rel="noopener"&gt;ADS&lt;/a&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;a href="https://orcid.org/0000-0000-0000-0000"</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                   </span>target="_blank" rel="noopener"&gt;ORCID&lt;/a&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;a href="https://github.com/jkcalahan"</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                   </span>target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;!-- Add or remove links as you like --&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;/div&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;/div&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">    </span>&lt;/div&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;/section&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;!-- =====================================================</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">     </span>RESEARCH / PAPERS</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">     </span>===================================================== --&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;section id="research"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;h2 class="section-heading"&gt;Research&lt;/h2&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;p class="section-sub"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>Selected publications — click a title to open its ADS record.</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;/p&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;!--</a></span></p>
+<p class="p4"><span class="s6"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span><span class="s7">═══════════════════════════════════════════════════</span></a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>PAPER TEMPLATE</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>Copy this entire &lt;article&gt; block to add a new paper.</a></span></p>
+<p class="p4"><span class="s6"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span><span class="s7">═══════════════════════════════════════════════════</span></a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>--&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p4"><span class="s6"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;!-- Paper 1 <span class="s7">───────────────────────────────────────</span><span class="s1"> --&gt;</span></a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;article class="paper-card"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;div class="paper-fig"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;!-- Replace with your key figure --&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;img src="images/papers/paper1.jpg” alt="Key figure from paper 1"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;/div&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;div class="paper-body"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;!-- Replace href with your ADS abstract URL --&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;h3&gt;&lt;a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...908....8C/abstract"</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                        </span>target="_blank" rel="noopener"&gt;</a></span></p>
+<p class="p5"><span class="s4"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                    </span></a></span>The TW Hya Rosetta Stone Project. III. Resolving the Gaseous Thermal Profile of the Disk</p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;/a&gt;&lt;/h3&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;p class="paper-meta"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                    </span>&lt;!-- Bold your name; list co-authors --&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                    </span>&lt;strong&gt;Calahan, J.K.&lt;/strong&gt;, Author B, Author C, et al.</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                    </span>&amp;nbsp;·&amp;nbsp;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                    </span>&lt;em&gt;ApJ&lt;/em&gt; 000, 000 (2024)</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;/p&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;!-- 3–5 plain-language sentences: question, method, result, impact --&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;p class="paper-summary"&gt;</a></span></p>
+<p class="p6"><span class="s4"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                 </span><span class="s8"> <span class="Apple-converted-space"> </span></span><span class="s9"> </span></a></span><span class="s10">I created very well constrained models for the disks TW Hya and HD 163296 using a 2D-thermochemical model, and reproducing multiple resolved ALMA observations. These produce well constrained 2D temperature profiles of each disk, allow for estimates of disk mass, and are used to futher understand the chemical environment in these disks.</span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;/p&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;/div&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;/article&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p4"><span class="s6"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;!-- Paper 2 <span class="s7">───────────────────────────────────────</span><span class="s1"> --&gt;</span></a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;article class="paper-card"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;div class="paper-fig"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;img src="images/papers/paper2.jpg” alt="Key figure from paper 2"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;/div&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;div class="paper-body"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;h3&gt;&lt;a href="https://ui.adsabs.harvard.edu/abs/2023NatAs...7...49C/abstract"</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                        </span>target="_blank" rel="noopener"&gt;</a></span></p>
+<p class="p7"><span class="s4"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                    </span></a></span><span class="s11">UV-driven chemistry as a signpost of late-stage planet formation</span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;/a&gt;&lt;/h3&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;p class="paper-meta"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                    </span>&lt;strong&gt;Calahan, J.K.&lt;/strong&gt;, Author B, et al.</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                    </span>&amp;nbsp;·&amp;nbsp;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                    </span>&lt;em&gt;A&amp;amp;A&lt;/em&gt; 000, A00 (2023)</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;/p&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;p class="paper-summary"&gt;</a></span></p>
+<p class="p6"><span class="s4"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                    </span></a></span><span class="s10">Using my thermo-chemical models of TW Hya and HD 163296, I am also able to reproduce observations of the carbon-rich species CH3CN , HCN, and HC3N. I argue the only way to reproduce this and all other previous observations are by evoking a UV-enriched radiation field due to the evoultion of small dust.</span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;/p&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;/div&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;/article&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;!-- <span class="s3">↑</span> Paste additional paper cards here <span class="s3">↑</span> --&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">    </span>&lt;/div&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;/section&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;!-- =====================================================</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">     </span>DEI &amp; OUTREACH</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">     </span>===================================================== --&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;section id="dei"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;h2 class="section-heading"&gt;DEI &amp;amp; Outreach&lt;/h2&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;!-- <span class="s3">↓</span> Optional: one or two sentences on your values/philosophy --&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;p class="section-sub"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>I am committed to building a more inclusive and equitable scientific community.</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>Below are some of the ways I have worked toward that goal.</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;/p&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;div class="dei-grid"&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;!--</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>DEI CARD TEMPLATE</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>Copy this block to add more items.</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>--&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;div class="dei-card"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;h3&gt;Activity or Program Name&lt;/h3&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;!-- Role, where, when, and impact (2–4 sentences) --&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;p&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                    </span>Describe this DEI or outreach activity: your role, where and when it</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                    </span>took place, and what impact it had.</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;/p&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;/div&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;div class="dei-card"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;h3&gt;Another Activity&lt;/h3&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;p&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                    </span>Description of another outreach or DEI initiative.</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;/p&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;/div&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;div class="dei-card"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;h3&gt;Another Activity&lt;/h3&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;p&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                    </span>Description of another outreach or DEI initiative.</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">                </span>&lt;/p&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;/div&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span>&lt;!-- <span class="s3">↑</span> Paste additional DEI cards here <span class="s3">↑</span> --&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;/div&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">    </span>&lt;/div&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;/section&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;!-- =====================================================</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">     </span>CV</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">     </span>===================================================== --&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;section id="cv"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">    </span>&lt;div class="container cv-block"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;h2 class="section-heading"&gt;Curriculum Vitae&lt;/h2&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;p&gt;A full PDF of my CV is available below.&lt;/p&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;!-- Make sure cv.pdf is in the root of your repo --&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;a href="cv.pdf" class="btn-cv" target="_blank" rel="noopener"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">            </span><span class="s12">⬇</span>&amp;nbsp; Download CV (PDF)</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;/a&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;!-- <span class="s3">↓</span> Update this date whenever you upload a new version --&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>&lt;p class="cv-date"&gt;Last updated: January 2025&lt;/p&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">    </span>&lt;/div&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;/section&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;!-- =====================================================</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">     </span>FOOTER</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">     </span>===================================================== --&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;footer&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">    </span>&lt;p&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>© 2025 J.K. Calahan &amp;nbsp;·&amp;nbsp;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">        </span>Hosted on &lt;a href="https://pages.github.com" target="_blank" rel="noopener"&gt;GitHub Pages&lt;/a&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html"><span class="Apple-converted-space">    </span>&lt;/p&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;/footer&gt;</a></span></p>
+<p class="p2"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;script src="script.js"&gt;&lt;/script&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;/body&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/jennycalahan/Documents/GitHub/jkcalahan.github.io/index.html">&lt;/html&gt;</a></span></p>
+</body>
 </html>
