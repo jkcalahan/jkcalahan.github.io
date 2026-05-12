@@ -407,11 +407,14 @@ section { scroll-margin-top: var(--nav-h); }
     min-height: 200px;
 }
 
-.dei-icon {
-    font-size: 3rem;
-    line-height: 1;
-    display: block;
+.dei-icon-img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--border);
     margin-bottom: 18px;
+    box-shadow: var(--shadow-sm);
 }
 
 .dei-front h3 {
