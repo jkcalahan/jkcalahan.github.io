@@ -365,28 +365,36 @@ section { scroll-margin-top: var(--nav-h); }
 }
 
 /*
-   .dei-grid is position: relative — the overlay uses this as its anchor.
-   overflow: visible lets the overlay grow downward past the grid's own height.
+   KEY LAYOUT RULE:
+   .dei-grid is position:relative — the positioning anchor.
+   .dei-card has NO position set — so it does NOT create a containing block.
+   .dei-overlay is position:absolute direct child of .dei-grid:
+       left:0 / right:0  → spans all 3 columns
+       top:0             → starts at top of grid
+       no 'bottom'       → grows downward freely with content
+   pointer-events:none on overlay → mouse passes through to cards,
+       so hovering a different card still triggers mouseenter
 */
 .dei-grid {
-    position: relative;
+    position: relative;        /* ← overlay anchors here */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    overflow: visible;
+                               /* overflow:visible (default) — lets overlay extend below */
 }
 
-/* ── Front card (always visible) ── */
+/* ── Front card ── */
 .dei-card {
     background: var(--off-white);
     border: 1px solid var(--border);
     border-radius: var(--radius);
     cursor: pointer;
-    transition: box-shadow var(--ease), transform var(--ease);
+    /* NOTE: no transform on hover — CSS transform creates a containing block
+       which would break the overlay's absolute positioning */
+    transition: box-shadow var(--ease);
 }
 .dei-card:hover {
     box-shadow: var(--shadow-md);
-    transform: translateY(-2px);
 }
 
 .dei-front {
@@ -421,25 +429,18 @@ section { scroll-margin-top: var(--nav-h); }
     pointer-events: none;
 }
 
-
-/* ── Overlay ──
-   Anchored to the TOP of .dei-grid (position: relative).
-   left: 0 / right: 0  →  spans full width of all 3 columns.
-   No 'bottom' set     →  height grows freely with content downward.
-   pointer-events: none on the overlay bg lets the hidden cards stay
-   hoverable, while the close button is explicitly re-enabled.
-*/
+/* ── Overlay ── */
 .dei-overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    /* NO bottom — grows downward with content */
+    /* NO bottom — height grows downward with content */
     z-index: 10;
     background: rgba(27, 58, 92, 0.97);
     border-radius: var(--radius);
     padding: 44px 36px 36px;
-    pointer-events: none;
+    pointer-events: none;       /* mouse passes through to cards below */
     /* Hidden state */
     opacity: 0;
     visibility: hidden;
@@ -451,7 +452,7 @@ section { scroll-margin-top: var(--nav-h); }
     visibility: visible;
 }
 
-/* Close button — always interactive */
+/* Close button — the only interactive element on the overlay */
 .dei-close {
     pointer-events: auto;
     position: absolute;
@@ -474,7 +475,7 @@ section { scroll-margin-top: var(--nav-h); }
     background: rgba(255, 255, 255, 0.35);
 }
 
-/* Inner layout: text on top, photos below */
+/* Overlay content: text on top, photos below */
 .dei-overlay-inner {
     display: flex;
     flex-direction: column;
@@ -492,10 +493,9 @@ section { scroll-margin-top: var(--nav-h); }
     font-size: 0.93rem;
     color: rgba(255, 255, 255, 0.88);
     line-height: 1.75;
-    max-width: 760px;
 }
 
-/* Three photo figures in a row */
+/* Three photos in a row */
 .dei-photos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -509,7 +509,6 @@ section { scroll-margin-top: var(--nav-h); }
     margin: 0;
 }
 
-/* The image container — fixed height, placeholder bg */
 .dei-photo-img-wrap {
     position: relative;
     width: 100%;
@@ -523,7 +522,7 @@ section { scroll-margin-top: var(--nav-h); }
     justify-content: center;
 }
 
-/* Camera emoji shown when image is missing */
+/* Placeholder shown when no image is provided */
 .dei-photo-img-wrap::before {
     content: '📷';
     font-size: 1.8rem;
@@ -532,7 +531,7 @@ section { scroll-margin-top: var(--nav-h); }
 }
 
 .dei-photo-img-wrap img {
-    position: relative;    /* sits above ::before */
+    position: relative;
     z-index: 1;
     width: 100%;
     height: 100%;
@@ -540,7 +539,6 @@ section { scroll-margin-top: var(--nav-h); }
     display: block;
 }
 
-/* Figure caption */
 .dei-photo-caption {
     font-size: 0.78rem;
     color: rgba(255, 255, 255, 0.65);
@@ -550,49 +548,23 @@ section { scroll-margin-top: var(--nav-h); }
 }
 
 
-/* ── Responsive: tablet / mobile ── */
+/* ── Responsive: tablet ── */
 @media (max-width: 768px) {
-
     .dei-grid {
         grid-template-columns: 1fr;
-        overflow: visible;
     }
-
-    /* On mobile each card has its own stacking context */
-    .dei-card {
-        position: relative;
-    }
-
-    /* Overlay flows inside the card as an accordion panel */
-    .dei-overlay {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        pointer-events: none;
-        display: none;
-        padding: 20px 20px 24px;
-        border-radius: 0 0 var(--radius) var(--radius);
-        transition: none;
-    }
-
-    .dei-overlay.active {
-        display: block;
-        pointer-events: auto;
-    }
-
+    /* On mobile the overlay is still position:absolute to .dei-grid,
+       but the grid is now a single column so left:0/right:0 = full width still works */
     .dei-photos {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
-
-    .dei-photo-img-wrap {
-        height: 100px;
-    }
+    .dei-photo-img-wrap { height: 100px; }
 }
 
 @media (max-width: 480px) {
-    .dei-photos          { grid-template-columns: 1fr; }
-    .dei-photo-img-wrap  { height: 160px; }
+    .dei-photos         { grid-template-columns: 1fr; }
+    .dei-photo-img-wrap { height: 160px; }
 }
 
 
