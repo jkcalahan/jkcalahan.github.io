@@ -1,4 +1,234 @@
 /* ============================================================
+   VARIABLES & RESET
+   ============================================================ */
+:root {
+    --navy:       #1b3a5c;
+    --blue:       #2475a8;
+    --blue-pale:  #eaf3fb;
+    --white:      #ffffff;
+    --off-white:  #f5f7fa;
+    --text:       #222222;
+    --muted:      #5f6b7a;
+    --border:     #dde4ec;
+
+    --nav-h:      62px;
+    --max-w:      960px;
+    --radius:     8px;
+    --shadow-sm:  0 1px 6px  rgba(0,0,0,0.07);
+    --shadow-md:  0 4px 18px rgba(0,0,0,0.11);
+    --ease:       0.2s ease;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.7;
+}
+
+img { max-width: 100%; display: block; }
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+    transition: color var(--ease);
+}
+a:hover { text-decoration: underline; }
+
+.container {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+section { scroll-margin-top: var(--nav-h); }
+
+
+/* ============================================================
+   NAVIGATION
+   ============================================================ */
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    height: var(--nav-h);
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+}
+
+.nav-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-brand {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--navy);
+    letter-spacing: 0.01em;
+}
+.nav-brand:hover { color: var(--blue); text-decoration: none; }
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 36px;
+}
+.nav-menu a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text);
+    letter-spacing: 0.02em;
+}
+.nav-menu a:hover { color: var(--blue); text-decoration: none; }
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+}
+.hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--navy);
+    border-radius: 2px;
+    transition: var(--ease);
+}
+
+
+/* ============================================================
+   SECTION HEADINGS
+   ============================================================ */
+.section-heading {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--navy);
+    padding-bottom: 12px;
+    margin-bottom: 6px;
+    position: relative;
+}
+.section-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 44px;
+    height: 3px;
+    background: var(--blue);
+    border-radius: 2px;
+}
+.section-sub {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-top: 14px;
+    margin-bottom: 40px;
+}
+
+
+/* ============================================================
+   ABOUT
+   ============================================================ */
+#about {
+    padding: 72px 0 80px;
+    background: var(--white);
+}
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 52px;
+    align-items: center;
+}
+
+.profile-wrap {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--border);
+    box-shadow: var(--shadow-md);
+    background: var(--blue-pale);
+    flex-shrink: 0;
+}
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile-fallback {
+    display: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.about-text h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.15;
+    margin-bottom: 10px;
+}
+.job-title {
+    font-size: 1rem;
+    color: var(--blue);
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+.bio {
+    font-size: 0.97rem;
+    max-width: 560px;
+    margin-bottom: 24px;
+}
+
+.pill-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.pill-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 5px 16px;
+    border: 1.5px solid var(--blue);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--blue);
+    transition: background var(--ease), color var(--ease);
+}
+.pill-links a:hover {
+    background: var(--blue);
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+/* ============================================================
    RESEARCH / PAPERS
    ============================================================ */
 #research {
@@ -22,7 +252,7 @@
     box-shadow: var(--shadow-md);
 }
 
-/* ── Front face (always visible) ── */
+/* Front face — always visible */
 .paper-front {
     display: grid;
     grid-template-columns: 240px 1fr;
@@ -57,7 +287,7 @@
     color: var(--muted);
 }
 
-/* ── Hover hint ── */
+/* Hover hint */
 .hover-hint {
     position: absolute;
     bottom: 10px;
@@ -73,42 +303,10 @@
     opacity: 0;
 }
 
-/* ── Overlay (appears on hover) ── */
+/* Overlay — appears on hover */
 .paper-overlay {
     position: absolute;
     inset: 0;
     background: rgba(27, 58, 92, 0.96);
     padding: 32px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 16px;
-    opacity: 0;
-    transition: opacity 0.25s ease;
-    overflow-y: auto;
-}
-.paper-card:hover .paper-overlay,
-.paper-card.overlay-active .paper-overlay {
-    opacity: 1;
-}
-
-.paper-overlay h3 {
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.4;
-    color: white;
-}
-.paper-overlay h3 a {
-    color: white;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
-.paper-overlay h3 a:hover {
-    color: #aed4f0;
-}
-
-.paper-summary {
-    font-size: 0.93rem;
-    line-height: 1.75;
-    color: rgba(255, 255, 255, 0.88);
-}
