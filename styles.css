@@ -532,3 +532,107 @@ footer a:hover { color: white; }
 .back-link:hover {
     text-decoration: underline;
 }
+
+/* ============================================================
+   NAV DROPDOWN
+   ============================================================ */
+.nav-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 50%;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    list-style: none;
+    min-width: 190px;
+    padding: 6px 0;
+    /* Hidden state */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(-50%) translateY(-6px);
+    transition: opacity var(--ease), visibility var(--ease), transform var(--ease);
+}
+
+/* Revealed on hover */
+.nav-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Small triangle pointer above the dropdown box */
+.dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid var(--border);
+}
+.dropdown-menu::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid var(--white);
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--text);
+    white-space: nowrap;
+    letter-spacing: 0.02em;
+}
+.dropdown-menu li a:hover {
+    background: var(--blue-pale);
+    color: var(--blue);
+    text-decoration: none;
+}
+
+/* Divider between dropdown items */
+.dropdown-menu li + li {
+    border-top: 1px solid var(--border);
+}
+
+/* Mobile — show dropdown items stacked inline (no hover needed) */
+@media (max-width: 768px) {
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        background: var(--off-white);
+        min-width: unset;
+        padding: 0;
+    }
+    .dropdown-menu::before,
+    .dropdown-menu::after { display: none; }
+
+    .dropdown-menu li a {
+        padding: 10px 24px 10px 40px;
+        font-size: 0.88rem;
+        color: var(--muted);
+    }
+    .dropdown-menu li + li {
+        border-top: none;
+    }
+}
