@@ -310,3 +310,177 @@ section { scroll-margin-top: var(--nav-h); }
     background: rgba(27, 58, 92, 0.96);
     padding: 32px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    overflow-y: auto;
+}
+.paper-card:hover .paper-overlay,
+.paper-card.overlay-active .paper-overlay {
+    opacity: 1;
+}
+
+.paper-overlay h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: white;
+}
+.paper-overlay h3 a {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.paper-overlay h3 a:hover {
+    color: #aed4f0;
+    text-decoration: none;
+}
+
+.paper-summary {
+    font-size: 0.93rem;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+
+/* ============================================================
+   DEI & OUTREACH
+   ============================================================ */
+#dei {
+    padding: 80px 0;
+    background: var(--white);
+}
+
+.dei-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.dei-card {
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px 22px;
+    transition: box-shadow var(--ease), transform var(--ease);
+}
+.dei-card:hover {
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-2px);
+}
+.dei-card h3 {
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 10px;
+}
+.dei-card p {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.65;
+}
+
+
+/* ============================================================
+   CV
+   ============================================================ */
+#cv {
+    padding: 80px 0;
+    background: var(--off-white);
+}
+.cv-block { text-align: center; }
+.cv-block p {
+    color: var(--muted);
+    margin-bottom: 28px;
+}
+
+.btn-cv {
+    display: inline-block;
+    padding: 13px 36px;
+    background: var(--navy);
+    color: var(--white);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 4px 14px rgba(27,58,92,0.25);
+    transition: background var(--ease), transform var(--ease);
+}
+.btn-cv:hover {
+    background: var(--blue);
+    color: var(--white);
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+.cv-date {
+    margin-top: 16px;
+    font-size: 0.82rem;
+    color: var(--muted);
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.65);
+    text-align: center;
+    padding: 24px;
+    font-size: 0.83rem;
+}
+footer a { color: rgba(255,255,255,0.85); }
+footer a:hover { color: white; }
+
+
+/* ============================================================
+   RESPONSIVE — TABLET (≤ 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+
+    .hamburger { display: flex; }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: var(--nav-h);
+        left: 0;
+        right: 0;
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow-md);
+        padding: 8px 0;
+    }
+    .nav-menu.open { display: flex; }
+    .nav-menu li a {
+        display: block;
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
+
+    .about-layout {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 28px;
+    }
+    .profile-wrap  { margin: 0 auto; }
+    .bio           { margin-left: auto; margin-right: auto; }
+    .pill-links    { justify-content: center; }
+
+    .paper-front   { grid-template-columns: 1fr; gap: 16px; }
+    .paper-fig img { height: 200px; }
+    .paper-overlay { padding: 24px; }
+}
+
+
+/* ============================================================
+   RESPONSIVE — MOBILE (≤ 480px)
+   ============================================================ */
+@media (max-width: 480px) {
+    .about-text h1   { font-size: 2rem; }
+    .section-heading { font-size: 1.5rem; }
+    .dei-grid        { grid-template-columns: 1fr; }
+}
