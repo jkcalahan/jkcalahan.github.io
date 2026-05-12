@@ -236,7 +236,7 @@ section { scroll-margin-top: var(--nav-h); }
     background: var(--off-white);
 }
 
-/* Card container */
+/* Card — must be position:relative so the overlay can fill it */
 .paper-card {
     position: relative;
     overflow: hidden;
@@ -252,8 +252,10 @@ section { scroll-margin-top: var(--nav-h); }
     box-shadow: var(--shadow-md);
 }
 
-/* Front face — always visible */
+/* Front face — always visible, sits on z-index 1 */
 .paper-front {
+    position: relative;
+    z-index: 1;
     display: grid;
     grid-template-columns: 240px 1fr;
     gap: 32px;
@@ -292,6 +294,7 @@ section { scroll-margin-top: var(--nav-h); }
     position: absolute;
     bottom: 10px;
     right: 14px;
+    z-index: 1;
     font-size: 0.75rem;
     color: var(--muted);
     font-style: italic;
@@ -303,23 +306,31 @@ section { scroll-margin-top: var(--nav-h); }
     opacity: 0;
 }
 
-/* Overlay — appears on hover */
+/* ── Overlay — hidden by default, revealed on hover ── */
 .paper-overlay {
     position: absolute;
-    inset: 0;
+    inset: 0;                          /* fill the card exactly */
+    z-index: 2;                        /* sit above .paper-front */
     background: rgba(27, 58, 92, 0.96);
     padding: 32px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 16px;
+    /* Hidden state */
     opacity: 0;
-    transition: opacity 0.25s ease;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
     overflow-y: auto;
 }
+
+/* Revealed on hover (desktop) or .overlay-active class (mobile tap) */
 .paper-card:hover .paper-overlay,
 .paper-card.overlay-active .paper-overlay {
     opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .paper-overlay h3 {
