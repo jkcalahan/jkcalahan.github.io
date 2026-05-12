@@ -272,46 +272,130 @@
             Making astronomy more accessible for underrepresented groups helps everyone.
             Thus, I have used my skills as a leader, advocate, educator, and public speaker to
             promote inclusion in the field, and especially encourage and promote individuals in
-            underrepresented groups. Below are a few examples of such service and outreach.
+            underrepresented groups. Hover over a card to learn more.
         </p>
 
-        <div class="dei-grid">
+        <div class="dei-grid" id="deiGrid">
 
-            <div class="dei-card">
-                <h3>Postdoc Council Chair</h3>
-                <p>
-                    I have been a member and now chair of the Postdoc Council at the
-                    Center for Astrophysics | Harvard &amp; Smithsonian from Summer 2024 to present.
-                    As chair, I initiated and led the first CfA postdoc symposium, built postdoc community
-                    through a Summer Games event, and advocated for postdoc support as a member of
-                    the CfA executive council.
-                </p>
-            </div>
+            <!-- ── Card 1 ─────────────────────────────────── -->
+            <div class="dei-card" data-card="postdoc">
 
-            <div class="dei-card">
-                <h3>Member of AAS Committee for Sexual and Gender Minorities</h3>
-                <p>
-                    I have been an active member of the AAS SGMA committee from 2023–2026. As a member,
-                    I created and maintained the Queer Speaker list and created the SGMA mini-grants which
-                    go to support local events that build LGBTQ+ community. I led the effort to summarize
-                    our committee's work, as well as action items for the astronomy community to support
-                    LGBTQ+ individuals in our field in a Nature Article to be published in June 2026.
-                </p>
-            </div>
+                <!-- Always visible: icon + title -->
+                <div class="dei-front">
+                    <span class="dei-icon">🏛️</span>
+                    <h3>Postdoc Council Chair</h3>
+                    <p class="dei-hint">hover for details</p>
+                </div>
 
-            <div class="dei-card">
-                <h3>Public Outreach</h3>
-                <p>
-                    I have given talks for the Boston/Cambridge public on topics of the Origins of Life
-                    and planets, as well as led telescope viewing sessions on the roof of the CfA. I have
-                    spoken to middle school students both at their schools directly, and through STEM-fair
-                    events where I have curated workshops on astronomical topics.
-                </p>
-            </div>
+                <!-- Overlay: fills the full row on hover -->
+                <div class="dei-overlay" data-for="postdoc">
+                    <button class="dei-close" aria-label="Close">✕</button>
+                    <div class="dei-overlay-inner">
+                        <div class="dei-overlay-text">
+                            <h3>Postdoc Council Chair</h3>
+                            <p>I have been a member and now chair of the Postdoc Council at the
+                            Center for Astrophysics | Harvard &amp; Smithsonian from Summer 2024
+                            to present. As chair, I initiated and led the first CfA postdoc
+                            symposium, built postdoc community through a Summer Games event, and
+                            advocated for postdoc support as a member of the CfA executive
+                            council.</p>
+                        </div>
+                        <div class="dei-photos">
+                            <!-- Add photos to images/dei/ — slots show as placeholders until then -->
+                            <div class="dei-photo-slot">
+                                <img src="images/dei/postdoc1.jpg" alt="Postdoc Council activity">
+                            </div>
+                            <div class="dei-photo-slot">
+                                <img src="images/dei/postdoc2.jpg" alt="Postdoc Council activity">
+                            </div>
+                            <div class="dei-photo-slot">
+                                <img src="images/dei/postdoc3.jpg" alt="Postdoc Council activity">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- ↑ Copy a dei-card block here to add more items ↑ -->
+            </div><!-- end card 1 -->
 
-        </div>
+
+            <!-- ── Card 2 ─────────────────────────────────── -->
+            <div class="dei-card" data-card="aas">
+
+                <div class="dei-front">
+                    <span class="dei-icon">🌈</span>
+                    <h3>AAS SGMA Committee</h3>
+                    <p class="dei-hint">hover for details</p>
+                </div>
+
+                <div class="dei-overlay" data-for="aas">
+                    <button class="dei-close" aria-label="Close">✕</button>
+                    <div class="dei-overlay-inner">
+                        <div class="dei-overlay-text">
+                            <h3>AAS Committee for Sexual and Gender Minorities</h3>
+                            <p>I have been an active member of the AAS SGMA committee from
+                            2023–2026. As a member, I created and maintained the Queer Speaker
+                            list and created the SGMA mini-grants which go to support local events
+                            that build LGBTQ+ community. I led the effort to summarize our
+                            committee's work, as well as action items for the astronomy community
+                            to support LGBTQ+ individuals in a Nature Article to be published in
+                            June 2026.</p>
+                        </div>
+                        <div class="dei-photos">
+                            <div class="dei-photo-slot">
+                                <img src="images/dei/aas1.jpg" alt="AAS SGMA activity">
+                            </div>
+                            <div class="dei-photo-slot">
+                                <img src="images/dei/aas2.jpg" alt="AAS SGMA activity">
+                            </div>
+                            <div class="dei-photo-slot">
+                                <img src="images/dei/aas3.jpg" alt="AAS SGMA activity">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- end card 2 -->
+
+
+            <!-- ── Card 3 ─────────────────────────────────── -->
+            <div class="dei-card" data-card="outreach">
+
+                <div class="dei-front">
+                    <span class="dei-icon">🔭</span>
+                    <h3>Public Outreach</h3>
+                    <p class="dei-hint">hover for details</p>
+                </div>
+
+                <div class="dei-overlay" data-for="outreach">
+                    <button class="dei-close" aria-label="Close">✕</button>
+                    <div class="dei-overlay-inner">
+                        <div class="dei-overlay-text">
+                            <h3>Public Outreach</h3>
+                            <p>I have given talks for the Boston/Cambridge public on topics of
+                            the Origins of Life and planets, as well as led telescope viewing
+                            sessions on the roof of the CfA. I have spoken to middle school
+                            students both at their schools directly, and through STEM-fair events
+                            where I have curated workshops on astronomical topics.</p>
+                        </div>
+                        <div class="dei-photos">
+                            <div class="dei-photo-slot">
+                                <img src="images/dei/outreach1.jpg" alt="Outreach activity">
+                            </div>
+                            <div class="dei-photo-slot">
+                                <img src="images/dei/outreach2.jpg" alt="Outreach activity">
+                            </div>
+                            <div class="dei-photo-slot">
+                                <img src="images/dei/outreach3.jpg" alt="Outreach activity">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- end card 3 -->
+
+            <!-- ↑ Copy a dei-card block here to add more cards ↑ -->
+
+        </div><!-- end .dei-grid -->
     </div>
 </section>
 

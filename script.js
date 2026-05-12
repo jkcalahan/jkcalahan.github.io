@@ -53,3 +53,58 @@ document.querySelectorAll('.paper-card').forEach(card => {
         card.classList.toggle('overlay-active');
     });
 });
+
+// ── DEI card hover expand ──────────────────────────────────────
+const deiGrid    = document.getElementById('deiGrid');
+const deiSection = document.getElementById('dei');
+const isMobile   = () => window.innerWidth <= 768;
+
+function openDeiOverlay(cardId) {
+    // Close any currently open overlay first
+    document.querySelectorAll('.dei-overlay').forEach(o => o.classList.remove('active'));
+    const overlay = document.querySelector(`.dei-overlay[data-for="${cardId}"]`);
+    if (overlay) overlay.classList.add('active');
+}
+
+function closeAllDeiOverlays() {
+    document.querySelectorAll('.dei-overlay').forEach(o => o.classList.remove('active'));
+}
+
+// Desktop: open on mouseenter of each card
+document.querySelectorAll('.dei-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        if (!isMobile()) openDeiOverlay(card.dataset.card);
+    });
+});
+
+// Desktop: close when mouse leaves the DEI section entirely
+deiSection.addEventListener('mouseleave', () => {
+    if (!isMobile()) closeAllDeiOverlays();
+});
+
+// Mobile: tap card to open, tap again (or close button) to close
+document.querySelectorAll('.dei-card').forEach(card => {
+    card.addEventListener('click', () => {
+        if (!isMobile()) return;
+        const id      = card.dataset.card;
+        const overlay = document.querySelector(`.dei-overlay[data-for="${id}"]`);
+        const isOpen  = overlay?.classList.contains('active');
+        closeAllDeiOverlays();
+        if (!isOpen) openDeiOverlay(id);
+    });
+});
+
+// Close button works on both desktop and mobile
+document.querySelectorAll('.dei-close').forEach(btn => {
+    btn.addEventListener('click', e => {
+        e.stopPropagation();
+        closeAllDeiOverlays();
+    });
+});
+
+// Hide broken images — show dashed placeholder instead
+document.querySelectorAll('.dei-photo-slot img').forEach(img => {
+    img.addEventListener('error', () => {
+        img.style.display = 'none';
+    });
+});
