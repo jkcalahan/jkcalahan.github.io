@@ -495,3 +495,40 @@ footer a:hover { color: white; }
     .section-heading { font-size: 1.5rem; }
     .dei-grid        { grid-template-columns: 1fr; }
 }
+
+/* ============================================================
+   MORE PAPERS LINK
+   ============================================================ */
+.more-papers {
+    text-align: center;
+    margin-top: 12px;
+    padding: 24px;
+    border-top: 1px solid var(--border);
+}
+.more-papers p {
+    font-size: 0.97rem;
+    color: var(--muted);
+}
+.more-papers a {
+    color: var(--blue);
+    font-weight: 500;
+}
+.more-papers a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================================
+   BACK LINK (used on papers.html)
+   ============================================================ */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--blue);
+    padding: 16px 0 0 0;
+}
+.back-link:hover {
+    text-decoration: underline;
+}
